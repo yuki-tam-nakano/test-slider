@@ -1,0 +1,255 @@
+p {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+img {
+  width: 100%;
+}
+
+/* .p-b2c-mv  */
+.p-b2c-mv {
+  width: 100%;
+  margin: 0 auto 40px;
+}
+
+@media screen and (max-width: 500px) {
+  .p-b2c-mv {
+    margin: 0 auto 60px;
+  }
+}
+
+
+.p-mv-img {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto 100px;
+}
+
+
+/* .p-main-point */
+.p-main-point {
+  width: 100%;
+  margin: 0 auto 100px;
+}
+
+.p-main-point .p-main-point-cont .p-main-point-lists {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: auto;
+  width: 90%;
+}
+
+@media screen and (max-width: 500px) {
+  .p-main-point .p-main-point-cont .p-main-point-lists {
+    display: block;
+  }
+}
+
+.p-main-point .p-main-point-cont .p-main-point-lists li.p-main-point-list {
+  width: 30%;
+  margin: 0 0 30px;
+  height: 450px;
+  box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 10%);
+  border-radius: 10px;
+  position: relative;
+  top: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .p-main-point .p-main-point-cont .p-main-point-lists li.p-main-point-list {
+    width: 48%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .p-main-point .p-main-point-cont .p-main-point-lists li.p-main-point-list {
+    width: 100%;
+    margin: 0 auto 80px;
+    height: auto;
+    padding: 0 0 100px;
+  }
+}
+
+
+
+
+
+
+/* スライド部分 */
+.swiper-wrapper {
+  width: 100%;
+}
+
+.is-target {
+  margin: auto;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 500px) {
+
+  .is-target {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+.is-target figure {
+  width: 100%;
+  height: 200px;
+}
+
+.is-target figure img {
+  width: 100%;
+  height: 100%;
+}
+
+.slider-lp-wrapper {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 0 40px;
+  width: 100%;
+}
+
+.slider-lp-container {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.slider-lp-items:not(.slick-initialized) {
+  display: flex;
+}
+
+.slider-lp-items>.slider-lp-item:nth-child(n+3) {
+  display: none !important;
+}
+
+.slider-lp-items .slider-lp-item {
+  margin: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+.slider-lp-items .slider-lp-item figure {
+  overflow: hidden;
+}
+
+.slider-lp-items .slider-lp-item a {
+  display: block;
+}
+
+
+#slider-lp .slick-list {
+  overflow: visible !important;
+}
+
+.slider-lp-ctrl {
+  height: 50px;
+  margin: 0 0 -40px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-lp-ctrl .slick-arrow {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  overflow: hidden;
+  text-align: left;
+  white-space: nowrap;
+  text-indent: -9999rem;
+  width: 11px;
+  height: 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: static;
+  box-shadow: none;
+}
+
+.slider-lp-ctrl .slick-arrow:hover {
+  opacity: 0.8;
+}
+
+.slider-lp-ctrl .slick-prev {
+  order: 0;
+  background: url(/img/arrow-prev.png) 0 0 no-repeat;
+}
+
+.slider-lp-ctrl .slick-next {
+  order: 999;
+  background: url(/img/arrow-next.png) 0 0 no-repeat;
+}
+
+
+.slider-lp-ctrl-dots {
+  margin: 0 32px;
+  order: 10;
+  display: flex;
+  align-items: center;
+}
+
+.slider-lp-ctrl-dots li {
+  position: relative;
+  margin: 0 4px;
+  padding: 0;
+  overflow: hidden;
+  width: 30px;
+  height: 4px;
+  background: #DADADA;
+  overflow: hidden;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+
+}
+
+.slider-lp-ctrl-dots li:hover {
+  opacity: 0.8;
+}
+
+.slider-lp-ctrl-dots li span {
+  display: block;
+  content: '';
+  width: 0%;
+  height: 100%;
+  border-radius: 4px;
+  background: #1E52A6;
+}
+
+.slider-lp-ctrl-dots li:not(.active) span {
+  width: 0% !important;
+}
+
+.slider-lp-ctrl-dots li:not(.active).past span {
+  width: 100% !important;
+}
+
+
+/* フェードイン */
+.is-up {
+  animation: fadein 0.8s ease-in forwards;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  75% {
+    opacity: 0.75;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
